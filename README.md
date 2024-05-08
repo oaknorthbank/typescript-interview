@@ -17,12 +17,20 @@ This project contains a first version of a function that calculates a credit sco
 - Credit utilisation percentage: TODO...
 - Payment history: is a list of invoices that the person needs to pay.
 
-## Task
-
-During the interview, we'll ask you to expand the current implementation of the credit score function. You'll have around 35 minutes for this.
-
-Before the interview, please:
+## Before the interview
 
 - Make sure you can run the project locally (`npm test` should run the tests in watch mode).
 - Get familiar with the existing code.
 - Don't write any code.
+
+During the interview, we'll ask you to expand the current implementation of the credit score function. You'll have around 35 minutes for this.
+
+#### Good to know...
+
+- At OakNorth we do TDD (test driven development)
+- We don't test implementation details
+- Previous Typescript knowledge isn't required but, since our codebase is in Typescript, we expect you to be able to contribute to this existing code.
+
+## Task
+
+To be given during the interview.
