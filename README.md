@@ -23,7 +23,7 @@ This project contains a first version of a function that calculates a credit sco
 - Get familiar with the existing code.
 - Don't write any code.
 
-During the interview, we'll ask you to expand the current implementation of the credit score function. You'll have around 35 minutes for this.
+During the interview, we'll ask you to expand the current implementation of the credit score function and update tests accordingly. You'll have around 35 minutes for this.
 
 #### Good to know...
 
