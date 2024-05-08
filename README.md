@@ -4,7 +4,7 @@ You'll need NodeJS v18.
 
 - `npm install`
 - `npm test` should run the tests
-- `npm dev` should run the main file
+- `npm run dev` should run the main file
 
 ## Context
 
@@ -23,6 +23,6 @@ During the interview, we'll ask you to expand the current implementation of the 
 
 Before the interview, please:
 
-- Make sure you can run the project locally (`npm dev` should run the tests in watch mode).
+- Make sure you can run the project locally (`npm test` should run the tests in watch mode).
 - Get familiar with the existing code.
 - Don't write any code.
