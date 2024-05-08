@@ -1,51 +1,17 @@
-// const getCreditUtilisation = (creditLimit: number, balance: number) => {
-//     return balance / creditLimit;
-// }
-
-export type CreditScore = {
-  value: number; // 0 - 999
-  category: "fair" | "good" | "excellent" | "poor" | "very poor";
-};
-
-type Invoice = {
-  paid_date: Date;
-  due_date: Date;
-  status: "PAID" | "UNPAID";
-};
-
-// length of credit history accounts for credit score too
+import { CreditReport, CreditScore } from "./types";
 
 /**
- a high % of overdue payments reduce credit score
- * (0.8 - 1) overdue then reduce credit score by 50%
- * (0.4 - 0.8) overdue then reduce credit score by 25%
- * (0.2 - 0.4) overdue then reduce credit score by 10% (optional)
+ *
+ * @param creditReport the credit report for a user
+ * @returns
+ * - 900 if credit utilisation percentage is less than 0.3
+ * - 700 if credit utilisation percentage is between 0.3 and 0.5
+ * - 600 if credit utilisation percentage is between 0.5 and 0.7
+ * - 500 if credit utilisation percentage is between 0.7 and 0.9
+ * - 300 if credit utilisation percentage is greater than 0.9
  */
-
-type CreditReport = {
-  paymentHistory: Invoice[];
-  creditUtilisation: number; // percentage 0.2, 0.5
-};
-
-/**
- * @param invoice
- * @returns true if it's not paid and due date is in the past
- */
-const isOverdue = (invoice: Invoice) => {
-  return invoice.status === "UNPAID" && invoice.due_date < new Date();
-};
-
-/**
- * @param value  value to calculate percentage
- * @param total total value
- * @returns percentage with 2 decimal places. E.g. 0.25
- */
-const calculatePercentage = (value: number, total: number) => {
-  return Math.round((value / total) * 100) / 100;
-};
-
-const getCreditScore = (creditReport: CreditReport): CreditScore => {
-  const creditUtilisation = creditReport.creditUtilisation;
+export const getCreditScore = (creditReport: CreditReport): CreditScore => {
+  const creditUtilisation = creditReport.creditUtilisationPercentage;
 
   if (creditUtilisation > 0.3 && creditUtilisation <= 0.5) {
     return {
@@ -73,4 +39,13 @@ const getCreditScore = (creditReport: CreditReport): CreditScore => {
     value: 900,
     category: "excellent",
   };
+};
+
+/**
+ * @param value  value to calculate percentage
+ * @param total total value
+ * @returns percentage with 2 decimal places. E.g. 0.25
+ */
+const calculatePercentage = (value: number, total: number) => {
+  return Math.round((value / total) * 100) / 100;
 };
