@@ -14,7 +14,7 @@ This project contains a first version of a function that calculates a credit sco
 
 **Credit report:** consists of a person's credit utilisation percentage and payment history.
 
-- Credit utilisation percentage: TODO...
+- Credit utilisation percentage: Credit utilization percentage shows how much of your available credit you're using. It refers to the ratio of your credit card balance to your credit limit.
 - Payment history: is a list of invoices that the person needs to pay.
 
 ## Before the interview
