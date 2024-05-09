@@ -1,7 +1,8 @@
 ## Running the project
 
-You'll need NodeJS v18.
+You'll need NVM and NodeJS v18.
 
+- `nvm use`
 - `npm install`
 - `npm test` should run the tests
 - `npm run dev` should run the main file
