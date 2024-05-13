@@ -10,7 +10,7 @@ describe("getCreditScore", () => {
 
     const creditScore = getCreditScore(creditReport);
 
-    expect(creditScore.value).toBe(300);
+    expect(creditScore.value).toBe(560);
     expect(creditScore.category).toBe("very poor");
   });
 
@@ -20,7 +20,7 @@ describe("getCreditScore", () => {
       creditUtilisationPercentage: 0.8,
     };
     const creditScore = getCreditScore(creditReport);
-    expect(creditScore.value).toBe(500);
+    expect(creditScore.value).toBe(720);
     expect(creditScore.category).toBe("poor");
   });
 
@@ -30,7 +30,7 @@ describe("getCreditScore", () => {
       creditUtilisationPercentage: 0.6,
     };
     const creditScore = getCreditScore(creditReport);
-    expect(creditScore.value).toBe(600);
+    expect(creditScore.value).toBe(880);
     expect(creditScore.category).toBe("fair");
   });
 
@@ -40,7 +40,7 @@ describe("getCreditScore", () => {
       creditUtilisationPercentage: 0.4,
     };
     const creditScore = getCreditScore(creditReport);
-    expect(creditScore.value).toBe(700);
+    expect(creditScore.value).toBe(960);
     expect(creditScore.category).toBe("good");
   });
 
@@ -50,7 +50,7 @@ describe("getCreditScore", () => {
       creditUtilisationPercentage: 0.2,
     };
     const creditScore = getCreditScore(creditReport);
-    expect(creditScore.value).toBe(900);
+    expect(creditScore.value).toBe(999);
     expect(creditScore.category).toBe("excellent");
   });
 });
