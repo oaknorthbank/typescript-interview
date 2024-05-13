@@ -10,7 +10,15 @@ You'll need NodeJS v18.
 
 This project contains a first version of a function that calculates a credit score given a credit report.
 
-**Credit score:** A credit score is a prediction of a person's credit behavior, such as how likely you are to pay a loan back on time, based on information from your credit reports. In our current implementation, the credit score values are: 900 (excellent), 700 (good), 600 (fair), 500 (poor), 400 (very poor).
+**Credit score:** A credit score is a prediction of a person's credit behavior, such as how likely you are to pay a loan back on time, based on information from your credit reports.
+
+In the UK, Experian's credit score ranges are:
+
+- "very poor" if the score is less or equals 560.
+- "poor" if the score is between 561 and 720.
+- "fair" if the score is between 721 and 880.
+- "good" if the score is between 881 and 960.
+- "excellent" if the score is between 961 and 999.
 
 **Credit report:** consists of a person's credit utilisation percentage and payment history.
 

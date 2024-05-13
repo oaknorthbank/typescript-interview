@@ -8,35 +8,35 @@ import { CreditReport, CreditScore } from "./types";
  * - 700 if credit utilisation percentage is between 0.3 and 0.5
  * - 600 if credit utilisation percentage is between 0.5 and 0.7
  * - 500 if credit utilisation percentage is between 0.7 and 0.9
- * - 300 if credit utilisation percentage is greater than 0.9
+ * - 400 if credit utilisation percentage is greater than 0.9
  */
 export const getCreditScore = (creditReport: CreditReport): CreditScore => {
   const creditUtilisation = creditReport.creditUtilisationPercentage;
 
   if (creditUtilisation > 0.3 && creditUtilisation <= 0.5) {
     return {
-      value: 700,
+      value: 960,
       category: "good",
     };
   } else if (creditUtilisation > 0.5 && creditUtilisation <= 0.7) {
     return {
-      value: 600,
+      value: 880,
       category: "fair",
     };
   } else if (creditUtilisation > 0.7 && creditUtilisation <= 0.9) {
     return {
-      value: 500,
+      value: 720,
       category: "poor",
     };
   } else if (creditUtilisation > 0.9) {
     return {
-      value: 300,
+      value: 560,
       category: "very poor",
     };
   }
 
   return {
-    value: 900,
+    value: 999,
     category: "excellent",
   };
 };
