@@ -4,11 +4,7 @@ import { CreditReport, CreditScore } from "./types";
  *
  * @param creditReport the credit report for a user
  * @returns
- * - 900 if credit utilisation percentage is less than 0.3
- * - 700 if credit utilisation percentage is between 0.3 and 0.5
- * - 600 if credit utilisation percentage is between 0.5 and 0.7
- * - 500 if credit utilisation percentage is between 0.7 and 0.9
- * - 400 if credit utilisation percentage is greater than 0.9
+ * - a credit score with a value and category
  */
 export const getCreditScore = (creditReport: CreditReport): CreditScore => {
   const creditUtilisation = creditReport.creditUtilisationPercentage;
