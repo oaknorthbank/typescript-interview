@@ -3,8 +3,7 @@ import { CreditReport, CreditScore } from "./types";
 /**
  *
  * @param creditReport the credit report for a user
- * @returns
- * - a credit score with a value and category
+ * @returns a credit score with a value and category
  */
 export const getCreditScore = (creditReport: CreditReport): CreditScore => {
   const creditUtilisation = creditReport.creditUtilisationPercentage;
