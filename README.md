@@ -22,7 +22,7 @@ Experian is a credit reporting company that defines the following ranges for cre
 
 **Credit report:** consists of a person's credit utilisation percentage and payment history.
 
-- Credit utilisation percentage: Credit utilization percentage shows how much of your available credit you're using. It refers to the ratio of your credit card balance to your credit limit.
+- Credit utilisation percentage: Credit utilisation percentage shows how much of your available credit you're using. It refers to the ratio of your credit card balance to your credit limit.
 - Payment history: is a list of invoices that the person needs to pay.
 
 ## Before the interview
