@@ -1,4 +1,5 @@
 {
+  "name": "credit-score",
   "scripts": {
     "dev": "tsx watch ./credit-score.ts",
     "test": "vitest"
@@ -9,6 +10,6 @@
     "vitest": "^1.6.0"
   },
   "engines": {
-    "node": "^18"
+    "node": "^22"
   }
 }
