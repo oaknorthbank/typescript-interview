@@ -1,6 +1,6 @@
 ## Running the project
 
-You'll need NodeJS v18.
+You'll need NodeJS v22.
 
 - `npm install`
 - `npm test` should run the tests

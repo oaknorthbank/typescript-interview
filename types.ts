@@ -4,7 +4,6 @@ export type CreditScore = {
 };
 
 export type Invoice = {
-  paidDate: Date | null;
   dueDate: Date;
   status: "PAID" | "UNPAID";
 };
