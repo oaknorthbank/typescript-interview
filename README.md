@@ -2,6 +2,7 @@
 
 You'll need NodeJS v22.
 
+- If you're using NVM as Node manager, run `nvm use`
 - `npm install`
 - `npm test` should run the tests
 - `npm run dev` should run the main file
