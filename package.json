@@ -2,6 +2,7 @@
   "name": "credit-score",
   "scripts": {
     "dev": "tsx watch ./credit-score.ts",
+    "check-types": "tsc --noEmit",
     "test": "vitest"
   },
   "devDependencies": {
